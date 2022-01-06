@@ -1,1 +1,1 @@
-# js-snippets
+# Javascript Snippets
