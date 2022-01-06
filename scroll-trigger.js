@@ -1,4 +1,4 @@
-/* Scroll Trigger v.1.0.1 - Copyright (C) 2022, TRMSC - https://trmsc1.wordpress.com/ */
+/* Scroll Trigger v.1.0.2 - Copyright (C) 2022, TRMSC - https://trmsc1.wordpress.com/ */
 /* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
 
 /* NEED TO LOAD JQUERY. IN MOODLE YOU CAN USE: */
@@ -19,8 +19,10 @@ function controlTrigger(trg) {
            wS = jQuery(this).scrollTop();
        if ((wS > (hT-400)) && (wS < (hT+hH-180))) {
            jQuery(trg).css("opacity", "1");
+           jQuery(trg).css("transform", "translate(0px, 0px)");
        } else {
            jQuery(trg).css("opacity", "0");
+           jQuery(trg).css("transform", "translate(-50px, 0px)");
        }
     });
 }
