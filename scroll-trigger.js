@@ -17,7 +17,7 @@ function controlTrigger(trg) {
            hH = jQuery(trg).outerHeight(),
            wH = jQuery(window).height(),
            wS = jQuery(this).scrollTop();
-       if ((wS > (hT-400)) && (wS < (hT+hH-180))) {
+       if ((wS > (hT-600)) && (wS < (hT+hH-180))) {
            jQuery(trg).css("opacity", "1");
            jQuery(trg).css("transform", "translate(0px, 0px)");
        } else {
